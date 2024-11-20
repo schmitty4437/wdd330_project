@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodle's Drawing App | Home Screen</title>
+    <meta name="description" content="description of page using keywords">
+    <meta name="author" content="Matthew Schmitt">
+    <link rel="icon" href="filename.ico" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main id="home-screen">
+        <!-- Home Screen -->
+        <h1>Welcome to Doodle's Drawing App</h1>
+        <div id="logo-area">
+            <div id="logo">Logo or Recent Art</div>
+        </div>
+        <div id="buttons">
+            <button id="start-new">Start New</button>
+            <button id="load-art">Load</button>
+        </div>
+        <!-- Drawing Canvas Screen -->
+        <section id="canvas-screen" class="screen hidden">
+            <h2>Drawing Canvas</h2>
+            <canvas id="drawing-canvas" width="800" height="600"></canvas>
+            <div id="tools">
+                <button id="color-btn">Color</button>
+                <button id="brush-btn">Brush</button>
+                <button id="clear-btn">Clear</button>
+            </div>
+        </section>
+
+        <!-- Save & Load Screen -->
+        <section id="save-load-screen" class="screen hidden">
+            <h2>Save & Load</h2>
+            <div id="saved-drawings">
+                <p>Saved drawings will appear here!</p>
+            </div>
+        </section>
+    </main>
+    <footer>&copy;2024 Matthew Schmitt | BYU-Idaho | WDD330</footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
