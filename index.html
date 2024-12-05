@@ -5,13 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doodle's Drawing App</title>
+    <title>Doodle's Drawing App</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- Home/Welcome Screen -->
     <div id="home-screen">
+    <!-- Home/Welcome Screen -->
+    <div id="home-screen">
         <h1>Welcome to Doodle's Drawing App</h1>
+        <button id="start-new">Start Drawing</button>
+    </div>
+
+    <!-- Canvas Screen -->
+    <div id="canvas-screen" class="hidden">
+        <div id="tools-container">
+            <!-- Color Options -->
+            <div id="color-options">
+                <h3>Pick Color</h3>
+                <div class="color-circle" data-color="#FF0000" style="background-color: #FF0000;"></div>
+                <div class="color-circle" data-color="#00FF00" style="background-color: #00FF00;"></div>
+                <div class="color-circle" data-color="#0000FF" style="background-color: #0000FF;"></div>
+                <div class="color-circle" data-color="#FFFF00" style="background-color: #FFFF00;"></div>
+                <div class="color-circle" data-color="#FF00FF" style="background-color: #FF00FF;"></div>
+                <div class="color-circle" data-color="#00FFFF" style="background-color: #00FFFF;"></div>
+            </div>
+
+
+            <!-- Canvas -->
         <button id="start-new">Start Drawing</button>
     </div>
 
@@ -44,9 +66,31 @@
                     <div class="size-circle" data-size="30"></div>
                 </div>
                 <button id="eraser-tool">Eraser</button>
+
+            <!-- Size Options -->
+            <div id="size-options">
+                <h3>Pick Size</h3>
+                <div class="size-row">
+                    <div class="size-circle" data-size="2"></div>
+                    <div class="size-circle" data-size="5"></div>
+                    <div class="size-circle" data-size="10"></div>
+                    <div class="size-circle" data-size="20"></div>
+                    <div class="size-circle" data-size="30"></div>
+                </div>
+                <button id="eraser-tool">Eraser</button>
             </div>
         </div>
+        </div>
 
+        <!-- Clear, Save, Load Buttons -->
+        <div id="action-buttons">
+            <button id="clear-canvas">Clear</button>
+            <button id="save-canvas">Save</button>
+            <button id="load-canvas">Load</button>
+        </div>
+    </div>
+
+    <script src="js/main.mjs" type="module"></script>
         <!-- Clear, Save, Load Buttons -->
         <div id="action-buttons">
             <button id="clear-canvas">Clear</button>
