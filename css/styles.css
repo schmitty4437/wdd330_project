@@ -3,12 +3,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     height: 100vh;
-    font-family: Arial, sans-serif;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f9f9f9;
     background-color: #f9f9f9;
 }
 
@@ -16,8 +13,6 @@ body {
 #home-screen {
     width: 100%;
     height: 100vh;
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,13 +23,6 @@ body {
 /* Canvas Screen Styling */
 #canvas-screen.hidden {
     display: none;
-    flex-direction: column;
-    background-color: #fffaf0;
-}
-
-/* Canvas Screen Styling */
-#canvas-screen.hidden {
-    display: none;
 }
 
 #canvas-screen {
@@ -45,42 +33,8 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #fffaf0;
-#canvas-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 100vh;
-    background-color: #fffaf0;
 }
 
-/* Tools Container */
-#tools-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    gap: 20px;
-}
-
-/* Color Options */
-#color-options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
-    width: fit-content;
-}
-
-/* Individual Color Circles */
-.color-circle {
-    width: 70px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
 /* Tools Container */
 #tools-container {
     display: flex;
@@ -111,22 +65,12 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
     flex: 0 0 calc(50% - 10px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-    flex: 0 0 calc(50% - 10px);
 }
 
 .color-circle:hover {
     transform: scale(1.2);
     border-color: #000;
-.color-circle:hover {
-    transform: scale(1.2);
-    border-color: #000;
 }
-
-
-/* Canvas Styling */
-canvas {
 
 /* Canvas Styling */
 canvas {
@@ -200,104 +144,24 @@ canvas {
     display: flex;
     justify-content: center;
     gap: 20px;
-/* Size Options */
-#size-options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.size-row {
-    display: flex;
-    gap: 10px;
-}
-
-.size-circle {
-    border-radius: 50%;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    border: 2px solid #999;
-}
-
-.size-circle[data-size="2"] {
-    width: 10px;
-    height: 10px;
-}
-
-.size-circle[data-size="5"] {
-    width: 20px;
-    height: 20px;
-}
-
-.size-circle[data-size="10"] {
-    width: 30px;
-    height: 30px;
-}
-
-.size-circle[data-size="20"] {
-    width: 40px;
-    height: 40px;
-}
-
-.size-circle[data-size="30"] {
-    width: 50px;
-    height: 50px;
-}
-
-.size-circle:hover {
-    transform: scale(1.2);
-    border-color: #000;
-}
-
-/* Active State for Circles */
-.color-circle.active,
-.size-circle.active {
-    border-color: #000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-}
-
-/* Clear, Save, Load Buttons */
-#action-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     margin-top: 20px;
 }
 
 #action-buttons button {
-#action-buttons button {
     padding: 10px 20px;
-    font-size: 1rem;
     font-size: 1rem;
     background-color: #87ceeb;
     border: none;
     border-radius: 5px;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
 }
 
-#action-buttons button:hover {
 #action-buttons button:hover {
     background-color: #4682b4;
     color: white;
-    color: white;
 }
 
-
-/* Modal Styling */
-#load-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
 /* Modal Styling */
 #load-modal {
     position: fixed;
@@ -310,13 +174,6 @@ canvas {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
-}
-
-#load-modal > div {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
     z-index: 1000;
 }
 
@@ -349,30 +206,6 @@ canvas {
 
 #load-modal button:first-of-type {
     background: #87ceeb;
-    width: 400px;
-    max-width: 90%;
-}
-
-#load-modal h2 {
-    margin-bottom: 20px;
-}
-
-#load-modal input {
-    margin-top: 10px;
-    width: 100%;
-}
-
-#load-modal button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#load-modal button:first-of-type {
-    background: #87ceeb;
     color: white;
 }
 
@@ -380,23 +213,6 @@ canvas {
     background: #ff6961;
     color: white;
 }
-
-#load-modal button:last-of-type {
-    background: #ff6961;
-    color: white;
-}
-
-
-
-#eraser-tool {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #f08080;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 
 
 #eraser-tool {
@@ -413,18 +229,8 @@ canvas {
 #eraser-tool:hover {
     background-color: #d9534f;
     color: white;
-
-#eraser-tool:hover {
-    background-color: #d9534f;
-    color: white;
 }
 
-/* Active State for Eraser */
-#eraser-tool.active {
-    background-color: #d9534f;
-    color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
 /* Active State for Eraser */
 #eraser-tool.active {
     background-color: #d9534f;
