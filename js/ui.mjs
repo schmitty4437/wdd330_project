@@ -26,32 +26,12 @@ export function attachActionButtons(clearBtn, saveBtn, loadBtn, fileInput, canva
 function renderLoadModal(loadCanvasFromJPEG) {
     const modal = document.createElement('div');
     modal.id = 'load-modal';
-    modal.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.8);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-    `;
-
+   
     const content = document.createElement('div');
-    content.style.cssText = `
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        width: 400px;
-        max-width: 90%;
-    `;
+  
 
     const title = document.createElement('h2');
-    title.textContent = 'Load a Drawing';
+    title.textContent = 'Load your Drawing';
     content.appendChild(title);
 
     const fileInput = document.createElement('input');
@@ -62,16 +42,7 @@ function renderLoadModal(loadCanvasFromJPEG) {
 
     const loadButton = document.createElement('button');
     loadButton.textContent = 'Load Drawing';
-    loadButton.style.cssText = `
-        margin-top: 10px;
-        padding: 10px 20px;
-        font-size: 16px;
-        background: #87ceeb;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    `;
+    
     loadButton.addEventListener('click', () => {
         const file = fileInput.files[0];
         if (file) {
@@ -84,16 +55,7 @@ function renderLoadModal(loadCanvasFromJPEG) {
 
     const closeButton = document.createElement('button');
     closeButton.textContent = 'Cancel';
-    closeButton.style.cssText = `
-        margin-top: 10px;
-        padding: 10px 20px;
-        font-size: 16px;
-        background: #ff6961;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    `;
+
     closeButton.addEventListener('click', () => {
         document.body.removeChild(modal);
     });

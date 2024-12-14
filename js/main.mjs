@@ -36,10 +36,10 @@ canvas.addEventListener('mouseout', canvasActions.stopDrawing);
 // Attach button actions
 attachActionButtons(clearBtn, saveBtn, loadBtn, fileInput, canvasActions);
 
-// Attach tool actions for color, size, and eraser
+// Attach tools for color, size, and eraser
 attachToolActions(colorCircles, sizeCircles, eraserBtn, canvasActions);
 
-// Event: Switch to Canvas Screen
+// Switch to Canvas Screen
 startNewBtn.addEventListener('click', () => {
     homeScreen.style.display = 'none';
     canvasScreen.classList.remove('hidden');
