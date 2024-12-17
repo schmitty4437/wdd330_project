@@ -1,9 +1,9 @@
 export function initializeCanvas(canvas) {
     const ctx = canvas.getContext('2d');
     let isDrawing = false;
-    let color = "#000000"; // Default color
-    let brushSize = 10; // Default brush size
-    let isEraser = false; // Eraser mode toggle
+    let color = "#000000";
+    let brushSize = 10; 
+    let isEraser = false;
 
     // Start drawing or erasing
     const startDrawing = (e) => {
@@ -16,7 +16,7 @@ export function initializeCanvas(canvas) {
     const draw = (e) => {
         if (!isDrawing) return;
         ctx.lineTo(e.offsetX, e.offsetY);
-        ctx.strokeStyle = isEraser ? "#ffffff" : color; // Use white for eraser
+        ctx.strokeStyle = isEraser ? "#ffffff" : color;
         ctx.lineWidth = brushSize;
         ctx.lineCap = "round";
         ctx.stroke();
